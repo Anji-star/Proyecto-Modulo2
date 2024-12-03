@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(243, 210, 237);
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.nav-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li{
+    margin-left: 20px;
+}
+
+.hero{
+    background-image: url(https://i.pinimg.com/736x/94/6d/e9/946de9c4394836de64669a3ee7f210d1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: aliceblue;
+    padding: 100px;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.featured-products{
+    padding: 50px;
+    text-align: center;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.product-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product{
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.product img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.Tarjeta h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.Tarjeta p{
+    width: 1000px;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.Tarjeta img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+footer{
+    background-color: rgb(41, 146, 146);
+    color: aliceblue;
+    text-align: center;
+}
+

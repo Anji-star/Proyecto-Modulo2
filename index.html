@@ -17,7 +17,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#menu">Menú</a></li>
+                <li><a href="#menu" onclick="redirigir('menu.html')">Menú</a></li>
                 <li><a href="#nosostros">Nosotros</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -28,11 +28,11 @@
         <div class="hero-content">
             <h2>El mejor café de la ciudad</h2>
             <p>Disfruta de una experiencia única con nuestros granos seleccionados.</p>
-            <button>Ver Menú</button>
+            <a href="#menu"><button class="my-button">Ver Menú</button></a>
         </div>
     </section>
 
-    <section class="featured-products" id="menu">
+    <section class="featured-products">
         <h2>TOP semanal ★</h2>
         <div class="product-list">
             <div class="product">
@@ -51,7 +51,7 @@
                 <p>Espresso con leche al vapor.</p>
             </div>
         </div>
-        <h2>Ménu</h2>
+        <h2 id="menu">Ménu</h2>
         <div class="product-list">
             <div class="product">
                 <img src="https://guadarrama.coffee/cdn/shop/articles/cafe-americano-en-la-taza.jpg?v=1726039331&width=1100" alt="Café 1">
@@ -68,10 +68,46 @@
                 <h3>Cappuccino</h3>
                 <p>Espresso con leche cremosa.</p>
             </div>
+            <div class="product">
+                <img src="https://images.ctfassets.net/0e6jqcgsrcye/zkhvqO6TPP4QbWMhKXw6F/9e8a1f159b979f2d2bf1d808ca81e2bf/milkybobatea_thumbnail.jpg" alt="Bubletea">
+                <h3>Bubble tea</h3>
+                <p>Té dulce con pequeñas esferas de tapioca.</p>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz7tr9QdtGyIneQxgarl4lIwuUiP24KG2Ddw&s" alt="Pastel1">
+                <h3>Supremo de chocolate</h3>
+                <p>Para esos momentos chocolatosos.</p>
+            </div>
+            <div class="product">
+                <img src="https://i0.wp.com/egastronome.recipes/wp-content/uploads/2024/09/caramel-macchiato.jpg?resize=1024%2C694&ssl=1" alt="Café 2">
+                <h3>Latte Macchiato</h3>
+                <p>Espresso con leche al vapor.</p>
+            </div>
+            <div class="product">
+                <img src="https://www.larutadelagarnacha.mx/wp-content/uploads/2021/06/donas-003.jpeg" alt="dona">
+                <h3>Donas arcoiris</h3>
+                <p>Donas de chocolate y vainilla.</p>
+            </div>
         </div>
     </section>
 
-    
+    <section class="equipo">
+        <h2>Nuestro equipo</h2>
+    <div class="equipo-container">
+        <div class="miembro">
+            <img src="https://static.cordonbleu.edu/Files/MediaFile/79299.jpg" alt="">
+            <h3>Pepe</h3>
+            <p>chef</p>
+        </div>
+
+        <div class="miembro">
+            <img src="https://permachef.com/cdn/shop/files/C20-Negro-1.jpg?v=1705682003" alt="">
+            <h3>Juan</h3>
+            <p>chef dos</p>
+        </div>
+    </div>
+    </section>
+
     <section class="Tarjeta" id="nosostros">
         <h2>Acerca de nosotros</h2>
         <p>Somos una familia dedicada a nuestros clientes al 100%, queremos que te sientas como en casa y por ello la experiencia sera totalme calida y de calidad.<br>Imagina un día tranquilo, rodeados de naturaleza, y el aroma de un buen café... esa es la experiencia que te ofrese Cafetería Sweet Home 
@@ -79,28 +115,25 @@
     </section>
 
 
-
-    <footer id="contacto">
-        <p>&copy; 2023 Mi Cafetería</p>
+    <footer>
+        <div class="footer-container" id="contacto">
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="newsletter">
+                <h3>Suscribete a nuestras promociones</h3>
+                <form>
+                    <input type="email" placeholder="Ingresa tu correo electronico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <p>&copy; 2024 Mi Cafetería</p>
+        </div>
     </footer>
 
-    <section id="contac">
-        <h4>Dudas y sujerencias</h4>
-        <form action="#" method="post"> 
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br><br>
-    
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required><br><br>
-    
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
-    
-            <input type="submit" value="Enviar">
-        </form>
+    <script src="main.js"></script>
 
-        <h4>Contacto directo para pedidos</h4>
-            <p>Tel:551234568 <br> Correo:crayonpower@starmail.com </p>
-    </section>
 </body>
 </html>

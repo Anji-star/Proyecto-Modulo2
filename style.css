@@ -193,3 +193,40 @@ footer{
     cursor: pointer;
 }
 
+.donas{
+    padding: 50px;
+    text-align: center;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.grid-dona{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px;
+    grid-template-areas: 
+    "dona1 dona1 dona2 dona3"
+    "dona1 dona1 dona4 dona5";
+}
+
+
+.dona{
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+.dona img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.dona:nth-child(1){grid-area: dona1;}
+.dona:nth-child(2){grid-area: dona2;}
+.dona:nth-child(3){grid-area: dona3;}
+.dona:nth-child(4){grid-area: dona4;}
+.dona:nth-child(5){grid-area: dona5;}

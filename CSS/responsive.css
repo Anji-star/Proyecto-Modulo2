@@ -1,18 +1,38 @@
-@media screen and (max-width:768px) {
+@media screen and (max-width:750px) {
     .navbar{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: flex-start;
+        padding: 20px;
+
     }
+    .rayitas{
+        display: block;
+    }
+
     .nav-links{
-        flex-direction: column;
+        position: fixed;
         width: 100%;
-        margin-top: 20px;
+        height: 18vh;
+        background-color: rgb(255, 146, 255);
+        top: 80px;
+        left: -100%;
+        text-align: center;
     }
 
-    .nav-links li{
-        margin: 10px 0;
+    .nav-links{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
     }
 
+    .nav-links a{
+        font-size: 20px;
+    }
+
+    #check:checked~ul{
+        left: 0;
+    }
+    
     .hero h2{
         font-size: 2rem;
     }

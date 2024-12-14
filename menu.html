@@ -5,17 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Cafetería</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="CSS/menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/a69cb97788.js" crossorigin="anonymous"></script>
 </head>
 
 
 <body>
     <header>
         <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="rayitas">
+                <i class="fa-solid fa-bars"></i>
+            </label>
             <div class="logo">
+                <i class="fa-solid fa-mug-saucer"></i>
                 <h1>Cafetería Sweet Home</h1>
             </div>
             <ul class="nav-links">
@@ -27,35 +36,75 @@
         </nav>
     </header>
 
-    
+    <section class="Bebidas">
+        <h2>BEBIDAS</h2>
+            <div class="grid-bebida">
+                <div class="Glu">
+                    <img src="https://guadarrama.coffee/cdn/shop/articles/cafe-americano-en-la-taza.jpg?v=1726039331&width=1100" alt="Café 1">
+                <h3>Café Americano</h3>
+                <p>Un clásico para comenzar el día.</p>
+                </div>
+                <div class="Glu">
+                    <img src="https://www.culinariamexicana.com.mx/wp-content/uploads/2021/05/mundo-del-te-scaled.jpg" alt="Te">
+                    <h3>Té multifasetico</h3>
+                    <p>Algo ligero para empezar el día.</p>
+                </div>
+                <div class="Glu">
+                    <img src="https://images.ctfassets.net/0e6jqcgsrcye/zkhvqO6TPP4QbWMhKXw6F/9e8a1f159b979f2d2bf1d808ca81e2bf/milkybobatea_thumbnail.jpg" alt="Bubletea">
+                <h3>Bubble tea</h3>
+                <p>Té dulce con pequeñas esferas de tapioca.</p>
+                </div>
+                <div class="Glu">
+                    <img src="https://www.cocinatis.com/archivos/202401/receta-capuchino-1280x720x80xX.jpg" alt="capuchino">
+                <h3>Capuchino</h3>
+                <p>Base de café espresso.</p>
+                </div>
+                <div class="Glu">
+                    <img src="https://i0.wp.com/egastronome.recipes/wp-content/uploads/2024/09/caramel-macchiato.jpg?resize=1024%2C694&ssl=1" alt="Machiato">
+                <h3>Latte Macchiato</h3>
+                <p>Espresso con leche al vapor.</p>
+                </div>
+                <div class="Glu">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXwpQ3zhQqMUZOg8W25JDZvp418ADxlEKihg&s" alt=" long black">
+                <h3> Long black</h3>
+                <p>Shot de espresso en agua caliente.</p>
+                </div>
+            </div>
+        </section>
+
+
     <section class="donas">
     <h2>DONAS</h2>
         <div class="grid-dona">
             <div class="dona">
-                <img src="https://truffle-assets.tastemadecontent.net/f9fd8ff7-donas_l_thumb.jpg" alt="Café 1">
+                <img src="https://truffle-assets.tastemadecontent.net/f9fd8ff7-donas_l_thumb.jpg" alt="Dona">
                 <h3>DONA CLASICA</h3>
                 <p>Un clásico para comenzar el día.</p>
             </div>
             <div class="dona">
-                <img src="https://mitiendafacil.mx/wp-content/uploads/2021/01/dona_04.jpg" alt="Frappe">
+                <img src="https://mitiendafacil.mx/wp-content/uploads/2021/01/dona_04.jpg" alt="Dona">
                 <h3>DONA DE FRESA</h3>
-                <p>DONA con fresa.</p>
+                <p>Dona con fresa.</p>
             </div>
             <div class="dona">
-                <img src="https://img.freepik.com/fotos-premium/dona-verde-chispas_889227-8342.jpg" alt="Café 2">
+                <img src="https://img.freepik.com/fotos-premium/dona-verde-chispas_889227-8342.jpg" alt="Dona">
                 <h3>DONA ESTRATERREESTRE</h3>
-                <p>dona verde de pera XD.</p>
+                <p>Dona verde de pera.</p>
             </div>
             <div class="dona">
-                <img src="https://lh5.googleusercontent.com/eFYnDn67N8HmCQzjpWOUwq-yJ_NEvW1kBxFy4oEmYuDLXZtlyXYSRt9p7hs_xMw7tMwwtez8SI9ZkHaR9K_9_DqLSGYvyjusNX9TqwWS0OOEcNS9yBMCk5UP1tVzkqHcd7be9PBj" alt="Bubletea">
-                <h3>DONA TAPIOCA</h3>
-                <p>DONA CON esferas de tapioca.</p>
+                <img src="https://lh5.googleusercontent.com/eFYnDn67N8HmCQzjpWOUwq-yJ_NEvW1kBxFy4oEmYuDLXZtlyXYSRt9p7hs_xMw7tMwwtez8SI9ZkHaR9K_9_DqLSGYvyjusNX9TqwWS0OOEcNS9yBMCk5UP1tVzkqHcd7be9PBj" alt="Dona">
+                <h3>DONA ATIPICA</h3>
+                <p>Dona con ingredientes sorpresa.</p>
             </div>
             <div class="dona">
-                <img src="https://www.recetasnestle.com.mx/sites/default/files/srh_recipes/7dae30538aced8716da0572ecde15072.png" alt="Pastel1">
+                <img src="https://www.recetasnestle.com.mx/sites/default/files/srh_recipes/7dae30538aced8716da0572ecde15072.png" alt="Dona">
                 <h3>DONA CHOCOLATE</h3>
                 <p>Para esos momentos chocolatosos.</p>
-
+            </div>
+            <div class="dona">
+                <img src="https://media.istockphoto.com/id/1028386968/es/foto/azul-donut-glaseado-sobre-un-fondo-azul-gran-donut-cian-sabroso-fresco-cubierto-con-esmalte.jpg?s=612x612&w=0&k=20&c=eqwlfIufSpa4llFQfT7fmyAxmXRrE9Wr_z_WBkS3bwg=" alt="Dona">
+                <h3>DONA CIELO</h3>
+                <p>Dona con relleno de zarzamora.</p>
             </div>
         </div>
     </section>

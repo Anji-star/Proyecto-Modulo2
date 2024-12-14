@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Cafetería</title>
+    <!--LINKS CSS-->
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/responsive.css">
     <link rel="stylesheet" href="CSS/menu.css">
+    <!--Links fuentes e iconos-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
-
-<script src="https://kit.fontawesome.com/a69cb97788.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a69cb97788.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -30,13 +31,17 @@
             <ul class="nav-links">
                 <li><a href="#inicio" onclick="redirigir('index.html')">Inicio</a></li>
                 <li><a href="#menu" onclick="redirigir('menu.html')">Menú</a></li>
-                <li><a href="#nosostros">Nosotros</a></li>
+                <li><a href="#nosostros" onclick="redirigir('index.html')">Nosotros</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
-
-    <section class="Bebidas">
+    <section class="nav-menu">
+        <a href="#Bebidas"><button class="button">BEBIDAS</button></a>
+        <a href="#donas"><button class="button">DONAS</button></a>
+        <a href="#especialidades"><button class="button">ESPECIALIDAES</button></a>
+    </section>
+    <section class="Bebidas" id="Bebidas">
         <h2>BEBIDAS</h2>
             <div class="grid-bebida">
                 <div class="Glu">
@@ -73,7 +78,7 @@
         </section>
 
 
-    <section class="donas">
+    <section class="donas" id="donas">
     <h2>DONAS</h2>
         <div class="grid-dona">
             <div class="dona">
@@ -102,12 +107,50 @@
                 <p>Para esos momentos chocolatosos.</p>
             </div>
             <div class="dona">
-                <img src="https://media.istockphoto.com/id/1028386968/es/foto/azul-donut-glaseado-sobre-un-fondo-azul-gran-donut-cian-sabroso-fresco-cubierto-con-esmalte.jpg?s=612x612&w=0&k=20&c=eqwlfIufSpa4llFQfT7fmyAxmXRrE9Wr_z_WBkS3bwg=" alt="Dona">
-                <h3>DONA CIELO</h3>
-                <p>Dona con relleno de zarzamora.</p>
+                
+                <img src="https://www.larutadelagarnacha.mx/wp-content/uploads/2021/06/donas-003.jpeg" alt="dona">
+                <h3>Donas arcoiris</h3>
+                <p>Donas sabores multiples.</p>
+                
             </div>
         </div>
     </section>
+
+    <section class="especialidades" id="especialidades">
+        <h2>ESPECIALIDADES</h2>
+            <div class="grid-especial">
+                <div class="esp">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz7tr9QdtGyIneQxgarl4lIwuUiP24KG2Ddw&s" alt="Pastel1">
+                    <h3>Supremo de chocolate</h3>
+                    <p>Para esos momentos chocolatosos.</p>
+                </div>
+                <div class="esp">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY7RbPLpeQGEKr-JMLB6L9kRdCTMtUbFJfJw&s" alt="Pizza">
+                    <h3>Pizza margarita</h3>
+                    <p>La más clásica de las pizzas italianas.</p>
+                </div>
+                <div class="esp">
+                    <img src="https://i.ytimg.com/vi/AyalmB2-FRw/maxresdefault.jpg" alt="paste2">
+                <h3>Mil hojas</h3>
+                <p>Con hojaldre crujiente .</p>
+                </div>
+                <div class="esp">
+                    <img src="https://www.simplyrecipes.com/thmb/KE6iMblr3R2Db6oE8HdyVsFSj2A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-3-1024x682-583b275444104ef189d693a64df625da.jpg" alt="pizza2">
+                <h3>Pizza clasica</h3>
+                <p>Pizza de pepperoni con extra queso.</p>
+                </div>
+                <div class="esp">
+                    <img src="https://cocinachilena.cl/wp-content/uploads/2011/06/tartaleta-frutas-casera-2-scaled.jpg" alt="tartaleta">
+                <h3>Tartaleta de frutas.</h3>
+                <p>Una delicia afrutada.</p>
+                </div>
+                <div class="esp">
+                    <img src="https://www.recetasnestle.com.mx/sites/default/files/2022-05/galletas-de-mantequilla-formas_0.jpg" alt=" galletas">
+                <h3> Galletas</h3>
+                <p>Galletas sabores multiples.</p>
+                </div>
+            </div>
+        </section>
 </body>
 
 <footer>

@@ -1,3 +1,28 @@
+.nav-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.button{
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #aa04af; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #8109fa; /* Color de fondo al pasar el mouse */
+}
+
+h2{
+    color: rgb(90, 7, 93);
+    background-color: rgb(241, 93, 236);
+}
 
 .donas{
     padding: 50px;
@@ -20,8 +45,9 @@
 
 
 .dona{
-    border: 1px solid gray;
+    border: 1px solid rgb(140, 24, 163);
     padding: 20px;
+    border-radius: 6px;
 }
 
 .dona img{
@@ -29,6 +55,20 @@
     height: 150px;
     object-fit: cover;
     margin-bottom: 10px;
+}
+@media only screen and (max-width:750px){
+    
+    .grid-dona{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 2fr);
+        grid-template-areas: 
+        "dona1"
+        "dona2"
+        "dona3"
+        "dona4"
+        "dona5"
+        "dona6";
+    }
 }
 
 .dona:nth-child(1){grid-area: dona1;}
@@ -59,8 +99,9 @@
 
 
 .Glu{
-    border: 1px solid gray;
+    border: 1px solid rgb(140, 24, 163);
     padding: 20px;
+    border-radius: 6px;
 }
 
 .Glu img{
@@ -70,8 +111,79 @@
     margin-bottom: 10px;
 }
 
+@media only screen and (max-width:750px){
+    
+    .grid-bebida{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 2fr);
+        grid-template-areas: 
+        "bebida1"
+        "bebida2"
+        "bebida3"
+        "bebida4"
+        "bebida5"
+        "bebida6";
+    }
+}
+
 .Glu:nth-child(1){grid-area: bebida1;}
 .Glu:nth-child(2){grid-area: bebida2;}
 .Glu:nth-child(3){grid-area: bebida3;}
 .Glu:nth-child(4){grid-area: bebida4;}
 .Glu:nth-child(5){grid-area: bebida5;}
+
+
+.especialidades{
+    padding: 50px;
+    text-align: center;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.grid-especial{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px;
+    grid-template-areas: 
+    "espe3 espe4 espe1 espe1 "
+    "espe5 espe6 espe2 espe2 ";
+}
+
+
+.esp{
+    border: 1px solid rgb(140, 24, 163);
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.esp img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width:750px){
+    
+    .grid-especial{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 2fr);
+        grid-template-areas: 
+        "espe1"
+        "espe2"
+        "espe3"
+        "espe4"
+        "espe5"
+        "espe6";
+    }
+}
+
+.esp:nth-child(1){grid-area: espe1;}
+.esp:nth-child(2){grid-area: espe2;}
+.esp:nth-child(3){grid-area: espe3;}
+.esp:nth-child(4){grid-area: espe4;}
+.esp:nth-child(5){grid-area: espe5;}
